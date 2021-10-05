@@ -54,7 +54,7 @@ while True:
 
             if x < lmlist[8][0] < x + w and y < lmlist[8][1] < y + h:
                 cv2.rectangle(img, (x-5, y-5), (x + w +5, y + h +5), (255, 0, 0), cv2.FILLED)
-                cv2.putText(img, button.text, (x + 25, y + 60), cv2.FONT_HERSHEY_PLAIN, 4, (255, 255, 255), 4)
+                cv2.putText(img, button.text, (x + 25, y + 60), cv2.FONT_HERSHEY_PLAIN, 4, (0, 0, 0), 4)
 
                 l, _, _ = detector.findDistance(8, 12, img, draw=False)
                 print(l)
